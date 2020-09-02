@@ -10,7 +10,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import PageObject.EbayLogin;
 import commonUtils.ReadEnvPropFile;
 import io.appium.java_client.AppiumDriver;
@@ -32,7 +32,7 @@ public class BaseClass {
 	 * Created Date: 01/09/2020
 	 * Description: create driver for android 
 	 */
-	@BeforeClass
+	@BeforeTest
 	public void initiateDriver() throws IOException{
 		try{
 			ReadEnvPropFile envValue = new ReadEnvPropFile();
